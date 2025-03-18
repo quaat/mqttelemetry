@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "mqttelemetry"
+version = "0.1.2"
+authors = [
+    { name = "Thomas F. Hagelien" }
+]
+description = "MQTT based telemetry for FastAPI applications"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pydantic>=2.10.6",
+    "paho-mqtt>=2.1",
+    "starlette>=0.46.1",
+]
+[project.urls]
+Homepage = "https://github.com/quaat/mqttelemetry"
+Issues = "https://github.com/quaat/mqttelemetry/issues"
